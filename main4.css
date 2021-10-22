@@ -1,0 +1,81 @@
+h1,h2 {
+    
+     color:dodgerblue; 
+     text-align: center; 
+    font-size: 30px;
+    font-weight: bolder; 
+ }  
+
+        
+ header #logo {
+            
+            font-size: 30px;
+            height: 80px;  
+            padding-left: 10px;    
+            padding-top: 15px;   
+             /*background: linear-gradient(  to right,paleturquoise,palevioletred); */
+              background-image: url(https://lh3.googleusercontent.com/proxy/JFyJKCRlAclKyYXhS8wMHZfOc9bGRtxm_vTd7ip47Lifz-PwfnJ9rNs9nR4Wq-36qyRg6tf3EkI7GOkWH9q1f6PjWCC2V2ZEUU793Bb9zJVXRXtQ0q-ZT_0mYz6Pf1rxrY7Oq1jwYFkFww);  
+        }
+            
+header nav {
+            border-radius: 20%; 
+            color:black;
+            background-color:lightcyan;
+            font-size: 25px;
+            
+        }
+
+            
+section #Noidung1,#Noidung2,#Noidung3,#Noidung4,#Noidung5,#Noidung6{
+                font-size: 20px;
+                color:black;
+                background-color:lightsalmon; 
+                font-style:bolder;
+        }
+footer {
+            background-color: #7f8c8d;
+            text-align: right;
+            text-decoration: underline;
+        } 
+header ul{
+            
+            list-style-type: none;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+header li{
+            
+            float: left ; 
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 150px;
+            padding-right: 50px;
+        }
+nav a:hover,a:active{
+    background-color:aquamarine;
+}
+header nav ul a {
+
+            
+            font-family:'Times New Roman', Times, serif;
+            font-weight: lighter ;
+            color: black;
+            text-decoration: none;
+        }
+section table{
+            width: 80%;
+            margin-left: 80px;
+        }
+section table,td,th{
+            text-align: center;
+            border:2px solid black;
+            border-collapse: collapse;
+        }
+
+ #Hb1,#Hb2,#Hb3,#Hb5,#Hb6,#Hb6-5{
+    margin-left: 150px; 
+}      
+#Kiemtra{
+            padding-left: 500px;
+        }
