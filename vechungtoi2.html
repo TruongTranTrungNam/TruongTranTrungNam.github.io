@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Về chúng tôi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
    
+    <title>Về chúng tôi</title>
+<style>
 
-    <style>
+
 /* CSS Variables */
 :root{
     --vangmenu:#2ecc71;
@@ -113,7 +116,7 @@ img{
 .showcase{
     grid-area: showcase;
     min-height: 400px;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(https://images.pexels.com/photos/3098137/pexels-photo-3098137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(https://images.pexels.com/photos/58724/pexels-photo-58724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     background-position: center;
     padding: 3rem;
@@ -179,7 +182,7 @@ img{
 } */
 
 /* Info */
-/* .info{
+ .info{
     border-radius: 10px;
     background: var(--primary);
     box-shadow: var(--shadow);
@@ -201,19 +204,33 @@ img{
     border-radius: 5px;
     width: 100%;
     box-shadow: var(--shadow);
-} */
+} 
 
 /* Footer */
 footer{
+    align-items: center;
     border-radius: 10px;
-    margin-top: 2rem  ;
-    margin-left: 470px;
     background: var(--dark);
     color:var(--light);
     text-align: center;
     padding: 1rem;
 }
-
+.share{
+    padding:1rem 10rem;
+}
+.share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4rem;
+    font-size: 4rem;
+    color:#fff;
+    border:.1rem solid rgba(255,255,255,.3);;
+    margin:.3rem;
+    border-radius: 20px;
+}
+.share a:hover{
+    background-color:darkorange;
+}
 /* Media Queries */
 @media(max-width:700px){
     .top-container{
@@ -249,8 +266,9 @@ footer{
     }
 }
 
-    </style>
 
+</style>
+    
 </head>
 <body>
     <div class="wrapper">
@@ -259,107 +277,47 @@ footer{
             <ul>
                 <li><a href="du-an5.html">Trang chủ</a></li>
                 <li><a href="vechungtoi2.html">Về Chúng tôi</a></li>
-                <li><a href="lienhe.html">Liên hệ</a></li>
+                <li><a href="lienhe2.html">Liên hệ</a></li>
                 <li><a href="https://www.youtube.com/c/SupercarBlondie"target="_blank">Review SuperCar</a></li>
             </ul>
         </nav>
 
-        <!-- Top Container -->
-        <section class="top-container">
-            <header class="showcase">
-                <h1>Giới thiệu bản thân</h1>
-                <p>Họ và tên: Trương Trần Trung Nam</p>
-                <p>Nghề nghiệp: Sinh viên</p>
-                <p>Trường: Cao đảng Kỹ thuật công nghệ Nha Trang</p>
-                <p>Ngành: Công nghệ thông tin</p>
-                <p>Ngày sinh: 11/12/2002</p>
-                <!-- <a href="https://vi.wikipedia.org/wiki/Si%C3%AAu_xe"target="_blank" class="bnt">Đọc thêm </a> -->
-                
-            </header>
-  <div class="top-box top-box-a">
+       <!-- Top Container -->
+       <section class="top-container">
+        <header class="showcase">
+            <h1>Giới thiệu bản thân</h1>
+            <p>Họ và tên: Trương Trần Trung Nam</p>
+            <p>Nghề nghiệp: Sinh viên</p>
+            <p>Trường: Cao đảng Kỹ thuật công nghệ Nha Trang</p>
+            <p>Ngành: Công nghệ thông tin</p>
+            <p>Ngày sinh: 11/12/2002</p>
+            
+            
+        </header>
+
+            <div class="top-box top-box-a">
                 <h4>Hội Viên</h4>
                 <p class="price">$200/Tháng</p>
-                <a href="dangky.html"  class="bnt">Mua Ngay</a>
+                <a href="dangky.html" class="bnt">Mua Ngay</a>
             </div>
 
             <div class="top-box top-box-b">
                 <h4> Vip Hội Viên</h4>
                 <p class="price">$300/Tháng</p>
                 <a href="dangky.html"  class="bnt">Mua Ngay</a>
-            </div> 
-        <!-- </section>
-        Boxes Section
-        <section class="boxes">
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="https://www.bugatti.com/"target="_blank" class="bnt2">Bugatti</a> -->
-                <!-- <h3>Bugatti</h3> -->
-                <!-- <p>Nhà sản xuất xe hơi Pháp này được biết
-                     đến với việc sản xuất các loại ô tô công suất cao.
-                     Ettore Bugatti thành lập công ty tại Molsheim, một
-                      xã ở Alsace, vào năm 1909.</p>
+            
             </div>
-
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="https://www.ferrari.com/en-EN"target="_blank" class="bnt2">Ferrari</a> -->
-                <!-- <h3>Ferrari</h3> -->
-                <!-- <p>Được thành lập bởi Enzo Ferrari vào năm 1939. Các mẫu xe
-                     của nhà sản xuất xe hơi Ý nổi tiếng với tốc độ và chất lượng thủ công vô cùng tinh xảo.</p>
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="https://www.lamborghini.com/en-en"target="_blank" class="bnt2">Lamborghini</a> -->
-                <!-- <h3>Lamborghini</h3> -->
-                <!-- <p>Ferruccio Lamborghini đã thành lập thương hiệu của mình vào năm 1963. Ông trùm sản xuất
-                     đã tìm cách cạnh tranh với các nhà sản xuất ô tô khác ra đời trước.</p>
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="https://www.mclaren.com/"target="_blank" class="bnt2">McLaren</a> -->
-                <!-- <h3>McLaren</h3> -->
-                <!-- <p>Năm 1964, McLaren đã sản xuất 24 chiếc xe đầu tiên của mình: chiếc M1A. Nhưng phải đến
-                     năm 1985, công ty mới chính thức thành lập.</p>
-            </div>
-
-        </section> -->
-
-        <!-- Info Section -->
-
-        <!-- <section class="info">
-            <img src="https://images.pexels.com/photos/638479/pexels-photo-638479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="hinhinfo" alt="">
-            <div>
-                <h2>Lịch sử về xe Oto</h2>
-                <p>Ô tô (phương ngữ Bắc Bộ) hay xe hơi (phương ngữ Nam Bộ) hoặc car (tiếng Anh) là loại phương tiện giao thông chạy bằng 4 bánh có chở theo động
-                    cơ của chính nó. Tên gọi ô-tô được nhập từ tiếng Pháp (automobile), tên tiếng Pháp xuất phát từ từ auto (tiếng Hy Lạp, nghĩa là tự thân) và
-                    từ mobilis (tiếng La Tinh, nghĩa là vận động). Từ automobile ban đầu chỉ những loại xe tự di chuyển được gồm xe không ngựa và xe có động cơ.
-                    Còn từ ô tô trong tiếng Việt chỉ dùng để chỉ các loại có 4 bánh. Chữ "xe hơi" bắt nguồn từ chữ Hoa 汽車, phát âm theo Hán Việt là khí xa. Còn
-                    người Nhật gọi xe hơi là 自動車 (Tự động xa) nghĩa là xe tự động. Các kiểu khác nhau của xe hơi gồm các loại xe: xe buýt, xe tải.</p>
-            <a href="https://vi.wikipedia.org/wiki/%C3%94_t%C3%B4"target="_blank" class="bnt">Đọc thêm</a>    
-            </div>
-        
-        </section> -->
-
-        <!-- Portfolio -->
-        <!-- <section class="portfolio">
-            <img src="https://images.pexels.com/photos/1428408/pexels-photo-1428408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/8921662/pexels-photo-8921662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/8974252/pexels-photo-8974252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/4502384/pexels-photo-4502384.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/4517062/pexels-photo-4517062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/1079948/pexels-photo-1079948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/4514445/pexels-photo-4514445.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/3697647/pexels-photo-3697647.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/6573336/pexels-photo-6573336.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="250" height="250" alt="">
-            <img src="https://images.pexels.com/photos/205337/pexels-photo-205337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="250" height="250" alt="">
-        </section> -->
            
+        </section>
+        
+
+        
+
+        
 
         <!-- Footer -->
         <footer>
-            <p>Supper Car by Trung Nam; 2021</p>
+            <p>Super Car by Trung Nam; 2021</p>
         </footer>
     </div>
     <!-- Wrapper Ends -->
