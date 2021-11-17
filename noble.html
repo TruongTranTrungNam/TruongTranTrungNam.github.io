@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+   
+    <title>Noble</title>
+<style>
+
+
+/* CSS Variables */
+:root{
+    --vangmenu:#2ecc71;
+    --xam:#7f8c8d;
+    --xanhmenu:#f1c40f;
+    --organemenu:#e67e22;
+    --primary:#ddd;
+    --dark:#333;
+    --light:#fff;
+    --shadow:0 1px 5px rgba(104,104,104,0.8);
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background-color: skyblue;
+    margin:30px 50px;
+    line-height:1.4;
+}
+
+.bnt{
+    
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration:none;
+    border:0;
+    border-radius: 10px;
+}
+.bnt:hover{
+    transition: 0.7s ease;
+    background: var(--organemenu);
+    color:var(--dark)
+}
+.bnt2{
+    
+    font-weight: bolder;
+    background: var(--organemenu);
+    color: var(--dark);
+    padding: 0.6rem 1.3rem;
+    text-decoration:none;
+    border:0;
+    border-radius: 5px;
+}
+.bnt2:hover{
+    
+    font-size: 20px;
+    transition: 0.8s ease;
+    background: var(--dark);
+    color:var(--light);
+}
+img{
+    max-width:100%;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul{
+    display: grid;
+    grid-gap:20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.main-nav a{
+    border-radius: 10px;
+    background: var(--organemenu);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color:var(--dark);
+    text-transform:uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+    transition: 0.7s ease;
+    
+}
+.main-nav a:hover{
+    background: var(--vangmenu);
+    color:var(--light)
+}
+
+/* Top Container */
+.top-container{
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+/* Showcase */
+.showcase{
+    grid-area: showcase;
+    min-height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(http://3.bp.blogspot.com/-d9ELHMTjTOw/Vk2NfKUqxMI/AAAAAAAAC8I/nLTBusW3Yc4/s1600/Dong%2Bxe%2BNoble.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.showcase h1{
+    
+    font-size: 4rem;
+    margin-bottom: 0;
+    color:var(--light)
+}
+
+.showcase p{
+    font-size: 1.3rem;
+    margin-top: 0;
+    color:var(--light)
+}
+
+/* Top Box */
+.top-box{
+    color: var(--light);
+    background: url(https://isuzu-vietnam.com/wp-content/uploads/2019/09/3.png);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box .price{
+    font-size: 2.5rem;
+}
+
+.top-box-a{
+    border-radius: 5px;
+    grid-area: top-box-a;
+}
+.top-box-b{
+    border-radius: 5px;
+    grid-area: top-box-b;
+}
+
+/* Boxes
+.boxes {
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+}
+
+.box{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+} */
+
+/* Info */
+ .info{
+    
+    border-radius: 10px;
+     background:whitesmoke; 
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+}
+
+.videoinfo{
+    
+    border-radius: 5px;
+}
+
+.portfolio{
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.portfolio img{
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: var(--shadow);
+} 
+
+/* Footer */
+footer{
+    align-items: center;
+    border-radius: 10px;
+    background: var(--dark);
+    color:var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+.share{
+    padding:1rem 10rem;
+}
+.share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4rem;
+    font-size: 4rem;
+    color:#fff;
+    border:.1rem solid rgba(255,255,255,.3);;
+    margin:.3rem;
+    border-radius: 20px;
+}
+.share a:hover{
+    background-color:darkorange;
+}
+/* Media Queries */
+@media(max-width:700px){
+    .top-container{
+        grid-template-areas: 
+        'showcase showcase'
+        'top-box-a top-box-b';
+    }
+
+    .showcase h1{
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+
+     .info{
+        grid-template-columns: 1fr;
+    }
+    .info .bnt{
+        display: block;
+        text-align: center;
+        margin: auto;
+    } 
+}
+
+@media(max-width:500px){
+    .top-container{
+        grid-template-areas: 
+        'showcase'
+        'top-box-a'
+        'top-box-b';
+    }
+}
+
+
+</style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navigation bar (Thanh điều hướng) -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="du-an5.html">Trang chủ</a></li>
+                <li><a href="vechungtoi2.html">Về Chúng tôi</a></li>
+                <li><a href="lienhe2.html">Liên hệ</a></li>
+                <li><a href="https://www.youtube.com/c/SupercarBlondie"target="_blank">Review SuperCar</a></li>
+            </ul>
+        </nav>
+
+        <!-- Top Container -->
+        <section class="top-container">
+            <header class="showcase">
+                <h1>Noble</h1>
+                <p>Koenigsegg được Christian von Koenigsegg thành lập năm 1994. Bắt đầu với ý tưởng sản xuất một chiếc xe
+                    thể thao thực sự đẳng cấp thế giới. Kể từ đó, công ty đã đạt được những kỷ lục về việc tạo ra chiếc xe 
+                    nhanh nhất với hầu hết mọi mẫu xe mới.
+                    </p>
+            </header>
+
+            <div class="top-box top-box-a">
+                <h4>Hội Viên</h4>
+                <p class="price">$200/Tháng</p>
+                <a href="dangky.html" class="bnt">Mua Ngay</a>
+            </div>
+
+            <div class="top-box top-box-b">
+                <h4> Vip Hội Viên</h4>
+                <p class="price">$300/Tháng</p>
+                <a href="dangky.html"  class="bnt">Mua Ngay</a>
+            
+            </div>
+           
+        </section>
+        
+
+        <section class="info">
+            <div class="video">
+            <p style="color:#e67e22;font-size: 40px;font-weight: bolder;">Review Noble</p>   
+            <iframe width="1000" height="490" src="https://www.youtube.com/embed/RxZ4ynElat8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </div>
+        
+        </section>
+
+        
+
+        <!-- Footer -->
+        <footer>
+            <p>Super Car by Trung Nam; 2021</p>
+        </footer>
+    </div>
+    <!-- Wrapper Ends -->
+</body>
+</html>
