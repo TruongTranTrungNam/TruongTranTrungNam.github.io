@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://fontawesome.com/v6.0"></script>
     <link rel="stylesheet"href="du-an5.css">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Supercar by Trung Nam</title>
 
     
@@ -15,13 +17,109 @@
         <!-- Navigation bar (Thanh điều hướng) -->
         <nav class="main-nav">
             <ul>
-                <li><a href="du-an5.html">Trang chủ</a></li>
-                <li><a href="vechungtoi2.html">Về Chúng tôi</a></li>
-                <li><a href="lienhe2.html">Liên hệ</a></li>
-                <li><a href="https://www.youtube.com/c/SupercarBlondie"target="_blank">Review SuperCar</a></li>
+                <li><a href="du-an5.html"><i class="fa fa-home" aria-hidden="true"></i> Trang chủ</a></li>
+                <li><a href="#"><i class="fa fa-car" aria-hidden="true"></i> List Supercar</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li>
+                                <a href="bugatti.html" class="bnt3">Bugatti</a>   
+                            </li>
+                            <li>
+                                <a href="ferrari.html" class="bnt3">Ferrari</a>
+                            </li>
+                            <li>
+                                <a href="lamborghini.html" class="bnt3">Lamborghini</a>
+                            </li>
+                            <li>
+                                <a href="mclaren.html" class="bnt3">McLaren</a>
+                            </li>
+                            <li>
+                                <a href="bmw.html" class="bnt3">BMW</a>
+                            </li>
+                            <li>
+                                <a href="aston-martin.html" class="bnt3">AstonMartin</a>
+                            </li>
+                            <li>
+                                <a href="koenigsegg.html" class="bnt3">Koenigsegg</a>
+                            </li>
+                            <li>
+                                <a href="noble.html" class="bnt3">Noble</a>
+                            </li>
+                            <li>
+                                <a href="pagani.html" class="bnt3">Pagani</a>
+                            </li>
+                            <li>
+                                <a href="porsche.html" class="bnt3">Porsche</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                
+                
+                
+                
+                
+                </li>
+                <li><a href="vechungtoi2.html"><i class="fa fa-users" aria-hidden="true"></i> Về Chúng tôi</a></li>
+                <li><a href="lienhe2.html"><i class="fa fa-phone" aria-hidden="true"></i> Liên hệ</a></li>
             </ul>
         </nav>
+<!-- slider image start -->
+<div class="slider">
+    <div class="slides">
+        <!-- radio button start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio button end -->
 
+        <!-- slider images start -->
+        <div class="slide first">
+            <img src="https://autopro8.mediacdn.vn/2021/10/2/photo-1-16331375510861089356493.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://photo-cms-kienthuc.zadn.vn/zoom/800/uploaded/ctvlanbanh/2021_04_22/hk/sieu-xe-hong-ky-s9-cua-trung-quoc-chao-ban-334-ty-dong.png">
+        </div>
+
+        <div class="slide">
+            <img src="https://news.otofun.net/stores/news_dataimages/thuhang/082020/28/09/5343_hong-ky-s9-1-9fbb.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://vnn-imgs-f.vgcloud.vn/2019/09/04/14/sieu-bo-manh-nhat-trong-lich-su-lamborghini-gia-gan-84-ty.jpg">
+        </div>
+        <!-- slider imgaes end -->
+        <!-- atomat navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!-- atomat navigation end -->
+    </div>
+    <!-- manual navigation start -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+
+    </div>
+    <!-- manual navigation end -->
+</div>
+ <!-- slider image end -->
+ <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+             counter = 1;
+         }
+     },4000);
+ </script>
+        
         <!-- Top Container -->
         <section class="top-container">
             <header class="showcase">
@@ -37,86 +135,18 @@
             <div class="top-box top-box-a">
                 <h4>Hội Viên</h4>
                 <p class="price">$200/Tháng</p>
-                <a href="dangky.html" class="bnt">Mua Ngay</a>
+                <a href="dangky2.html" class="bnt">Mua Ngay</a>
             </div>
 
             <div class="top-box top-box-b">
                 <h4> Vip Hội Viên</h4>
                 <p class="price">$300/Tháng</p>
-                <a href="dangky.html"  class="bnt">Mua Ngay</a>
+                <a href="dangky2.html"  class="bnt">Mua Ngay</a>
             
             </div>
            
         </section>
-        <!-- Boxes Section -->
-        <section class="boxes">
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="bugatti.html" class="bnt2">Bugatti</a>
-                <!-- <h3>Bugatti</h3> -->
-                
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="ferrari.html" class="bnt2">Ferrari</a>
-                <!-- <h3>Ferrari</h3> -->
-                
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="lamborghini.html" class="bnt2">Lamborghini</a>
-                <!-- <h3>Lamborghini</h3> -->
-               
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="mclaren.html" class="bnt2">McLaren</a>
-                <!-- <h3>McLaren</h3> -->
-                
-            </div>
-
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="bmw.html" class="bnt2">BMW</a>
-                <!-- <h3>BMW</h3> -->
-                
-                    </div>
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="aston-martin.html" class="bnt2">Aston Martin</a>
-                <!-- <h3>Aston Martin</h3> -->
-                
-                    </div>        
-            <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="koenigsegg.html" class="bnt2">Koenigsegg</a>
-                <!-- <h3>Koenigsegg</h3> -->
-                
-
-                    </div>
-             <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="noble.html" class="bnt2">Noble</a>
-                <!-- <h3>Noble</h3> -->
-                
-                    </div>
-             <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="pagani.html" class="bnt2">Pagani</a>
-                <!-- <h3> Pagani</h3> -->
-                
-
-                    </div>     
-                    <div class="box">
-                <i class="fa-solid fa-chart-pie"></i>
-                <a href="porsche.html" class="bnt2">Porsche</a>
-                <!-- <h3> Porsche</h3> -->
-                
-                    </div>                                                                                                              
-        </section>
+        
 
         <!-- Info Section -->
 
