@@ -458,7 +458,61 @@ justify-content: center;
             </div>
            
         </section>
-        
+         <!-- slider image start -->
+<div class="slider">
+    <div class="slides">
+        <!-- radio button start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio button end -->
+
+        <!-- slider images start -->
+        <div class="slide first">
+            <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/kpqkcwvo/2021_07_08/aventador/211937678_1763959160481909_7645230197349723980_n_ouqs.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://www.topgear-magazine.fr/wp-content/uploads/2019/08/lamborghini_aventador_svj_63_1.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="https://cms-i.autodaily.vn/du-lieu/2020/03/26/lamborghini-aventador-svj-2.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://images.hdqwalls.com/download/2021-lamborghini-sc20-new-iu-1920x1080.jpg">
+        </div>
+        <!-- slider imgaes end -->
+        <!-- atomat navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!-- atomat navigation end -->
+    </div>
+    <!-- manual navigation start -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+
+    </div>
+    <!-- manual navigation end -->
+</div>
+ <!-- slider image end -->
+ <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+             counter = 1;
+         }
+     },4000);
+ </script>
 
         <section class="info">
             <div class="video">
