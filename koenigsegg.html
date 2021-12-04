@@ -460,7 +460,62 @@ justify-content: center;
             </div>
            
         </section>
-        
+        <!-- slider image start -->
+<div class="slider">
+    <div class="slides">
+        <!-- radio button start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio button end -->
+
+        <!-- slider images start -->
+        <div class="slide first">
+            <img src="https://media.vov.vn/sites/default/files/styles/large/public/2021-08/1_main_l.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://i.xeoto.com.vn/auto/koenigsegg/jesko-absolut/koenigsegg-jesko-absolut.png">
+        </div>
+
+        <div class="slide">
+            <img src="https://photo-cms-xedoisong.zadn.vn/w700/Uploaded/2021/kbjoplb/2016_09_07/koenigsegg_agera_rsr/xedoisong_koenigsegg_agera_rsr_limited_edition_only_japan_h1_thoz.jpg">
+        </div>
+        <div class="slide">
+            <img src="http://cdn.carbuzz.com/gallery-images/1600/820000/100/820168.jpg">
+        </div>
+        <!-- slider imgaes end -->
+        <!-- atomat navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!-- atomat navigation end -->
+    </div>
+    <!-- manual navigation start -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+
+    </div>
+    <!-- manual navigation end -->
+</div>
+ <!-- slider image end -->
+ <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+             counter = 1;
+         }
+     },4000);
+ </script>
+
 
         <section class="info">
             <div class="video">
