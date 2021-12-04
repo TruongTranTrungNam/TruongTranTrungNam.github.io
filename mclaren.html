@@ -458,7 +458,61 @@ justify-content: center;
             </div>
            
         </section>
-        
+        <!-- slider image start -->
+<div class="slider">
+    <div class="slides">
+        <!-- radio button start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio button end -->
+
+        <!-- slider images start -->
+        <div class="slide first">
+            <img src="https://media.vov.vn/sites/default/files/styles/large/public/2021-09/mclaren_720s_daniel_ricciardo_7.png">
+        </div>
+        <div class="slide">
+            <img src="https://giaxeoto.vn/admin/upload/images/resize/640-ngoai-that-xe-mclaren-720s-coupe.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="https://panther4x4.vn/wp-content/uploads/2021/06/l2gjbcmou1hp.jpeg">
+        </div>
+        <div class="slide">
+            <img src="https://katavina.com/uploaded/tin-tuc/anh%20tin%20tuc/McLaren-720s.jpg">
+        </div>
+        <!-- slider imgaes end -->
+        <!-- atomat navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!-- atomat navigation end -->
+    </div>
+    <!-- manual navigation start -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+
+    </div>
+    <!-- manual navigation end -->
+</div>
+ <!-- slider image end -->
+ <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+             counter = 1;
+         }
+     },4000);
+ </script>
 
         <section class="info">
             <div class="video">
