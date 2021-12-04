@@ -459,7 +459,61 @@ justify-content: center;
             </div>
            
         </section>
-        
+        <!-- slider image start -->
+<div class="slider">
+    <div class="slides">
+        <!-- radio button start -->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!-- radio button end -->
+
+        <!-- slider images start -->
+        <div class="slide first">
+            <img src="https://luxuo.vn/wp-content/uploads/2021/01/20210121-LCW-1.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://znews-photo.zadn.vn/w660/Uploaded/abhuuwo/2021_04_16/Ferrari_SF90_Stradale.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/102020/15/14/croped/amp_img/bang-gia-xe-ferrari-2020-tai-viet-nam-moi-nhat-thang-102020_6.jpg">
+        </div>
+        <div class="slide">
+            <img src="https://media.ex-cdn.com/EXP/media.tapchigiaothong.vn/files/duc.anh/2017/10/29/150860652167172-01-1034.jpg">
+        </div>
+        <!-- slider imgaes end -->
+        <!-- atomat navigation start -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!-- atomat navigation end -->
+    </div>
+    <!-- manual navigation start -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+
+    </div>
+    <!-- manual navigation end -->
+</div>
+ <!-- slider image end -->
+ <script type="text/javascript">
+     var counter = 1;
+     setInterval(function(){
+         document.getElementById('radio' + counter).checked = true;
+         counter++;
+         if(counter > 4){
+             counter = 1;
+         }
+     },4000);
+ </script>
 
         <section class="info">
             <div class="video">
